@@ -1,0 +1,73 @@
+:root {
+    --ptc1: #FFD700;
+    --ptc2: #F5F5F5;
+    --ptc3: #333333;
+    --cardBG: #628D2A;
+
+    --grColor1: #E6B8B8;
+    --grColor2: #B8E6D4; 
+    --grColor3: #D8B8E6; 
+    --grColor4: #E6D3B8; 
+    --grColor5: #B8D0E6; 
+    --grColor6: #E6C9B8; 
+}
+
+.volleSeite {
+    height: 100vh;
+    /* background: #D09CFA; */
+    /* Multi-Position Color-Stop Gradient 🤩🌟💪🏼 */
+    background: 
+    linear-gradient(45deg,var(--grColor6),var(--grColor3),var(--grColor5)),
+    linear-gradient(180deg,var(--grColor2),var(--grColor4),var(--grColor1)); 
+    background-size: 400% 400%;
+    -webkit-animation: sweetGradient 20s ease-in-out infinite;
+}
+
+@-webkit-keyframes sweetGradient {
+    0%{ background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+
+.centerCard {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    backdrop-filter: blur(18px) saturate(156%);
+    -webkit-backdrop-filter: blur(18px) saturate(156%);
+    background-color: rgba(255, 255, 255, 0.24);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.ptc-1 {
+    color: var(--ptc1) !important;
+}
+
+.ptc-2 {
+    color: var(--ptc2) !important;
+}
+
+.ptc-3 {
+    color: var(--ptc3) !important;
+}
+
+.pokeSearch {
+    width: 20vw !important;
+}
+
+.w-25 {
+    display: flex;
+    justify-content: right;
+}
+
+.pokeName{
+    font-size: 2rem; /*32 pixel*/
+}
+
+/* Style für Übung Seite*/
+body{
+    background: rgb(160, 219, 255);
+}
